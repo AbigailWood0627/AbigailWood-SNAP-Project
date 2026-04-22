@@ -16,7 +16,7 @@ class Tutor
   }
 
 let tutors = [
-  new Tutor("Alice Chen", "https://www.csulb.edu/sites/default/files/images/2025-10/profile-college-corps-christine.jpg", "Computer Science", 3.9, ["Java", "Python", "C++"], 25.00, [5, 4, 5, 5], "alice.chen@email.com"),
+  new Tutor("Alice Chen", "https://www.csulb.edu/sites/default/files/images/2025-10/profile-college-corps-christine.jpg", "Actuarial Science", 3.9, ["Java", "Python", "C++"], 25.00, [5, 4, 5, 5], "alice.chen@email.com"),
   new Tutor("Marcus Rivera", "https://www.csulb.edu/sites/default/files/images/2025-10/profile-college-corps-nicolas.jpg", "Software Engineering", 3.7, ["Python", "R", "JavaScript"], 22.00, [4, 5, 4], "marcus.rivera@email.com"),
   new Tutor("Gabi Bateman", "https://www.csulb.edu/sites/default/files/images/2025-10/profile-college-corps-gabi.jpg", "Computer Science", 4.0, ["C++", "C", "Java"], 28.00, [5, 5, 5, 4, 5], "gabi.bateman@email.com"),
   new Tutor("Daniela Cohen", "https://www.csulb.edu/sites/default/files/images/2025-10/profile-college-corps-danielle.jpg", "Information Technology", 3.5, ["Bash", "PowerShell", "Go"], 20.00, [4, 3, 4], "daniela.cohen@email.com"),
