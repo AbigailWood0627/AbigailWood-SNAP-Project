@@ -51,7 +51,7 @@ body {
 }
 
 .card {
-  width: 300px;
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -68,13 +68,18 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Georgia", serif;
-  
   font-size: 40px;
 }
 
 .card img {
   width: 100%;
   height: auto;
+}
+
+.star-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .card .star {
