@@ -86,7 +86,7 @@ function editCardContent(card, tutor) {
   console.log("new card:", name, "- html: ", card);
 }
 
-document.addEventListener("DOMContentLoaded", showCards(tutors));
+document.addEventListener("DOMContentLoaded", () => showCards(tutors));
 
 //restores page to original tutors data
 function backToHome() {
