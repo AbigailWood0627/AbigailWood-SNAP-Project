@@ -5,23 +5,49 @@ body {
 }
 
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 10px;
+  background: linear-gradient(to bottom, rgba(35, 24, 221, 0.8), transparent);
+  padding-bottom: 50px;
 }
 
 .title {
   text-align: center;
   margin: 0;
-  font-size: 8em;
-  font-family: "Helvetica";
-  font-weight: normal;
+  font-size: 3em;
+  font-family: "Georgia", serif;
+  font-weight: 700;
   color: white;
 }
 
-#card-container {
+.layout-wrapper {
   display: flex;
-  justify-content: center;
-  margin: 20px;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background: rgba(35, 24, 221, 0.8);
+  color: #fff;
+  width: 150px;
+  flex-shrink: 0; 
+  border-radius: 4px;
+  border: 1px solid #777;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#card-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
 }
 
 .card {
@@ -29,18 +55,21 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
 }
 
 .card-content {
   padding: 20px;
   font-family: "Verdana";
-  color: #777;
+  color: rgba(35, 24, 221, 0.8);
 }
 
 .card-content h2 {
   margin-top: 0;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Georgia", serif;
+  
+  font-size: 40px;
 }
 
 .card img {
@@ -48,23 +77,32 @@ body {
   height: auto;
 }
 
+.card .star {
+  font-size: 10vh;
+  cursor: pointer;
+}
+
+.yellow {
+  color: rgb(251, 255, 120);
+}
+
 .footer {
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(35, 24, 221, 0.8);
   padding: 10px;
 }
 
 button {
   text-align: center;
-  background-color: #666;
+  background-color: #FFF;
   border: none;
   padding-left: 10px;
   padding-right: 10px;
-  height: 40px;
+  height: 25px;
   border-radius: 10px;
-  color: white;
-  font-size: 22px;
+  color: rgba(35, 24, 221, 0.8);
+  font-size: 15px;
   cursor: pointer;
   margin: 5px;
 }

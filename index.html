@@ -1,31 +1,61 @@
 <!doctype html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+    <title>CS Tutoring Center | Home</title>
+    <meta name="description" content="A Catalog of Computer Science Tutors" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
   </head>
-
   <body>
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+      <h1 class="title">CS Tutoring Center</h1>
     </header>
-    <div id="card-container"></div>
+    <div class="layout-wrapper">
+
+      <div class="sidebar">
+        <p>Search for Specialties:</p>
+        <form name="searchBar">
+          <input type="text" name="specialty">
+          <button onclick= "searchResults()">Submit</button>
+        </form>
+
+        <p>Filter Search:</p>
+        <form name="filterBar">
+          <input type="text" name="fSpecialty">
+          <button onclick="filterResults()">Submit</button>
+        </form>
+
+        <button onclick="sortByHourly()">Sort by Hourly</button>
+        <button onclick="sortByRatings()">Sort by Ratings</button>
+      </div>
+
+      <div id="card-container"></div>
+
+    </div>
     <div class="card" style="display: none">
       <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
+        <h2>Tutor Name</h2>
+        <img src="" alt="Tutor Profile Photo" />
         <ul>
           <li>Bullet Point 1</li>
           <li>Bullet Point 2</li>
           <li>Bullet Point 3</li>
+          <li>Bullet Point 4</li>
+          <li>Bullet Point 5</li>
+          <li>Bullet Point 6</li>
         </ul>
+<span onmouseover="starRating(1, this)" onclick="storeReview(1, this)" class="star">&#10029;</span>
+<span onmouseover="starRating(2, this)" onclick="storeReview(2, this)" class="star">&#10029;</span>
+<span onmouseover="starRating(3, this)" onclick="storeReview(3, this)" class="star">&#10029;</span>
+<span onmouseover="starRating(4, this)" onclick="storeReview(4, this)" class="star">&#10029;</span>
+<span onmouseover="starRating(5, this)" onclick="storeReview(5, this)" class="star">&#10029;</span>
       </div>
     </div>
+
     <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
+      <div class="footer-right">
+        <button onclick="backToHome()">Back to Home</button>
+      </div>
     </div>
   </body>
 </html>
